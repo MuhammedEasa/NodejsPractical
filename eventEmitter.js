@@ -1,6 +1,6 @@
-const event = require("events")
 
-const eventEmitter = new event.EventEmitter()
+const EventEmitter = require('events')
+const eventEmitter = new EventEmitter()
 
 eventEmitter.on('greet',(data)=>{
     console.log(data);
